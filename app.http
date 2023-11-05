@@ -1,0 +1,27 @@
+POST http://localhost:8080/users/create HTTP/1.1
+content-type: application/json
+
+{
+    "Name": "Saulo",
+    "Email": "saulo@teste.com",
+    "Age": 28
+}
+
+###
+
+GET http://localhost:8080/users/read
+
+###
+
+PUT http://localhost:8080/users/update?id=6
+content-type: application/json
+
+{
+    "Name": "Saulo",
+    "Email": "saulo@teste.com.br",
+    "Age": 28
+}
+
+###
+
+DELETE http://localhost:8080/users/delete?id=5
